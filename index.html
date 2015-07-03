@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perfekt Kitchen Miami Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script language="javascript">
+    // HTML 5 FIX - COMPATABILITY WITH OLDER BROWSERS - CSS FIX PRESENT IN MAIN.CSS
+			document.createElement("article");
+			document.createElement("aside");
+			document.createElement("details");
+			document.createElement("figcaption");
+			document.createElement("figure");
+			document.createElement("footer");
+			document.createElement("header");
+			document.createElement("main");
+			document.createElement("hgroup");
+			document.createElement("menu");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("share");
+		</script>
+  </head>
+  <body>
+	<main ng-app="myApp">
+	  	<header>
+
+	  	</header>
+	  	<section class="box-only transition" ng-controller="KitchenCtrl">
+	  			  		
+	  		<article id="my-kitchen" class="transition">
+
+		  		<table class="fl">
+	  			<tr ng-cloak ng-repeat="product in kitchen.products" ng-class="product.status">
+	  				<td class="line-bottom-dotted">{{product.name}}</td>
+	  				<td class="label-price">{{product.price | currency : symbol}}</td>
+	  				<td class="status"><a href="javascript://" ng-class="product.status" ng-click="change(product)"></a></td>
+	  			</tr>
+	  			<tr>
+	  				<td>List price:</td>
+	  				<td class="label-price line-top ">{{listPrice | currency : symbol}}</td>
+	  				<td></td>
+	  			</tr>
+				<tr>
+	  				<td ng-class="{'font-red': discountItems>2, 'font-gray': discountItems<3}">Bosch Promotion: Buy 3 get 10% Off</td>
+	  				<td class="label-price line-top" ng-class="{'font-red': discountItems>2, 'font-gray': discountItems<3}">{{discountPrice | currency : symbol}}</td>
+	  				<td></td>
+	  			</tr>
+				<tr>
+	  				<td>Package Total:</td>
+	  				<td class="label-price line-top line-bottom-double">{{totalPrice | currency : symbol}}</td>
+	  				<td></td>
+	  			</tr>
+	  		</table>
+		  		<a id="kitchen-main" href="javascript://"><img class="kitchen fr box-shadow border-radius" src="img/NY-Kitchen_420w-FPO.jpg"/></a>
+				<br/><a class="myButton transition" href="http://www.bosch-home.com/us/support/find-a-dealer.html" target="_blank">Find a Dealer &gt;&gt;</a>
+
+			<article>
+			
+			<article id="products-in-kitchen">
+				<ul>
+					<li ng-repeat="product in kitchen.products" ng-class="product.status">
+						<div class="thumb fl">
+							<img ng-src="{{product.img}}" ng-class="product.status"/><br/>
+							<a href="javascript://">Shop This Product</a></br>
+							<a href="javascript://">Shop All {{product.category}}</a></br>
+						</div>
+						<div class="desc fl">
+							<b>{{product.name}}</b>
+							<br/>
+							{{product.sku}}</br>
+							<b>{{product.price | currency : symbol}}</b><br/>
+							{{product.desc}}
+						</div>
+					</li>
+				</ul>
+			</article>
+
+	    </section>
+
+		<footer>
+
+		</footer>
+	</main>
+    
+    <!-- 
+    https://docs.angularjs.org/misc/downloading 
+    http://code.jquery.com/jquery-latest.js
+    https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js
+    https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-touch.js
+    -->
+	<script type="text/javascript" src="js/angular.min.js"></script> 
+	<script type="text/javascript" src="js/angular-touch.js"></script> 
+
+    <script src="js/jquery-v1.11.1.js"></script>
+    <script language="javascript" src="js/main.js"></script>
+    <script language="javascript" src="js/kitchenJsonObj.json"></script>
+
+
+  </body>
+</html>

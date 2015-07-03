@@ -1,0 +1,12 @@
+var kitchenJsonObj = [
+		{name: "30\" Single Wall Oven Benchmark™ Series", price: "2599", sku: "HBLP451UC", category: "Ovens", desc: "With a high-resolution TFT user interface and a QuietClose™ door that won’t slam shut.", img: "img/Product_NY_MCSA00618259_HBLP451UC_152x181.jpg"},
+		{name: "30\" Gas Cooktop Benchmark™ Series", price: "1299", sku: "NGMP055UC", category: "Cooktops", desc: "Our award-winning five-burner gas cooktop offers the ability to cook more at once.", img: "img/Product_NY_MCSA00621212_NGMP055_152x181.jpg"},
+		{name: "36\" Glass Canopy Chimney Wall Hood Benchmark™ Series", price: "1199", category: "Ventilation", sku: "HCG56651UC", desc: "Add style and sophistication to the kitchen with complete freedom in your kitchen planning.", img: "img/Product_NY_MCSA00664914_HCG56651UC_152x181.jpg"},
+		{name: "Chimney Wall Hood Extension Kit", price: "259", sku: "HCGEXT5UC", category: "Ventilation", desc: "", img: "img/Product_NY_MCSA00664914_HCG56651UC_152x181.jpg"},
+		{name: "Chimney Wall Hood Filter Kit", price: "59", sku: "HCIFILTUC", category: "Ventilation", desc: "", img: "img/Product_NY_MCSA00664914_HCG56651UC_152x181.jpg"},
+		{name: "Chimney Wall Hood Recirculation Kit", price: "79", sku: "HCREC5UC",category: "Ventilation",  desc: "", img: "img/Product_NY_MCSA00664914_HCG56651UC_152x181.jpg"},
+		{name: "30\" Steam Convection Oven Benchmark™ Series", price: "3099", category: "Ovens", sku: "HSLP451UC", desc: "The only steam convection oven in its class that installs flush.", img: "img/Product_NY_MCSA00746437_HSLP451UC_152x181.jpg"},
+		{name: "30\" Warming Drawer 500 Series", price: "1099", sku: "HWD5051UC", category: "Microwaves and Warming/Storage Drawers", desc: "Designed to match the flush fit of a Bosch wall oven, speed microwave oven or steam convection oven.", img: "img/Product_NY_MCSA00652240_HWD5051UC_152x181.jpg"},
+		{name: "30\" Built-in Bottom-Freezer Refrigerator Benchmark™ Series", category: "Refrigerators", price: "6499", sku: "B30BB830SS", desc: "This slim refrigerator works efficiently to prevent the transfer of flavors and keep produce fresh longer.", img: "img/Product_NY_MCSA052958_B30BB830SS_152x181.jpg"},
+		{name: "24\" Custom Panel 39 dBA Dishwasher with TFT Benchmark™ Series", category: "Dishwashers", price: "1899", sku: "SHV9PT53UC", desc: "Expandable wings on our flexible 3rd rack provide extra space to fit ramekins, measuring cups and extra-large utensils.", img: "img/Product_NY_MCSA00553087_D7199_SHV9PT53UC_181669_korr_15_152x181.jpg"}
+];
